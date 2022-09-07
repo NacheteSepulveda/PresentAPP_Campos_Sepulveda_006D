@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="end">
+      <ion-back-button 
+        defaultHref="/selecusuario"
+        text="Volver"
+        color="primary"
+        mode="ios">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">Present!APP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button (click)="input()" expand="full" fill="outline" shape="round" color="warning">
+    Ingrese sus datos
+  </ion-button>
+
+  <ion-button (click)="onClick()" expand="block" routerLink="/selecusuario" class="formu" color="warning">
+    Enviar
+  </ion-button>
+
+  <ion-card>
+    <img class="logo" src="assets/logo.png" alt="">
+  </ion-card>
+
+</ion-content>

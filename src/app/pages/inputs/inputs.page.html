@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="end">
+      <ion-back-button 
+        defaultHref="/"
+        text="Back"
+        color="primary"
+        mode="ios">
+      </ion-back-button>
+    <!--<ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="start" name="menu-outline"></ion-icon>
+       </ion-button>-->
+    </ion-buttons>
+    <ion-title color="light">Docente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form #formulario="ngForm" (ngSubmit)="onSubmit()">
+
+    <ion-item>
+      <ion-label>Email: </ion-label>
+      <ion-input type="email" placeholder="Email"
+                 name="email" value="" [(ngModel)]= "usuario.email"
+                 pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                 required>
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Password: </ion-label>
+      <ion-input type="password"	 placeholder="Contraseña"
+                 name="password" value="" [(ngModel)]= "usuario.password"
+                 required>
+      </ion-input>
+    </ion-item>
+
+    <ion-button [disabled] ="formulario.invalid"
+            type="submit" color="warning" expand="block" routerLink="/inicio">
+      Enviar
+    </ion-button>
+
+  </form>
+
+  <ion-card>
+    <img class="logo" src="assets/logo.png" alt="">
+  </ion-card>
+
+
+</ion-content>

@@ -1,0 +1,48 @@
+.bienvenida{
+    background-color: gold;
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    font-size: medium;
+    border-radius: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 500px;
+    left: 110px;
+}
+
+
+.parrafo{
+    color: aliceblue;
+}
+
+.asist{
+    background-color: gold;
+    position: fixed;
+    bottom: 450px;
+    left: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;    
+}
+
+.asisimg{
+    position: fixed;
+    bottom: 140px;
+    border-radius: 20px;
+    right: 2px;
+}
+
+.logo{
+    position: fixed;
+    bottom: 490px;
+    width: 100px;
+    left: 3px;
+    border-radius: 20px;
+
+}
+
+.escanearqr{
+    position: fixed;
+    left: 80px;
+    bottom: 70px;
+    text-align: center;
+}

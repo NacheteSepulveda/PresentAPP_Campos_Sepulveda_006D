@@ -17,15 +17,15 @@ export class AppComponent {
 
   componentes: Componente[] = [ 
     {
-      icon: 'log-out-outline',
-      name: 'Cerrar sesion',
-      redirecTo:'/selecusuario',
-    },
-    {
       icon: 'document-text-outline',
       name: 'Acerca de...',
       redirecTo:'/card',
     },
+    {
+      icon : 'eye-outline',
+      name: 'Correos de compañeros',
+      redirecTo: '/feriados'
+    }
   ];
 
 }

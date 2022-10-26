@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { FormalumnoPageRoutingModule } from './formalumno-routing.module';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { FormalumnoPage } from './formalumno.page';
 
 @NgModule({
@@ -13,7 +13,8 @@ import { FormalumnoPage } from './formalumno.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    FormalumnoPageRoutingModule
+    FormalumnoPageRoutingModule,
+    ReactiveFormsModule
   ],
   declarations: [FormalumnoPage]
 })

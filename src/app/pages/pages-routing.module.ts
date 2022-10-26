@@ -15,6 +15,14 @@ const routes: Routes = [
   {
     path: 'registro',
     loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'apirest',
+    loadChildren: () => import('./apirest/apirest.module').then( m => m.ApirestPageModule)
+  },
+  {
+    path: 'feriados',
+    loadChildren: () => import('./feriados/feriados.module').then( m => m.FeriadosPageModule)
   }
 ];
 

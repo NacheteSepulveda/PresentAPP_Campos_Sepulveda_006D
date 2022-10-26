@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { InputsPageRoutingModule } from './inputs-routing.module';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { InputsPage } from './inputs.page';
 
 @NgModule({
@@ -13,7 +13,8 @@ import { InputsPage } from './inputs.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    InputsPageRoutingModule
+    InputsPageRoutingModule,
+    ReactiveFormsModule
   ],
   declarations: [InputsPage]
 })

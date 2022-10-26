@@ -12,10 +12,10 @@
 
 <ion-content color="light">
   <div class="bienvenida">
-    <ion-label class="parrafo">BIENVENIDO/A</ion-label>
+    <ion-label class="parrafo">HOLA!, DOCENTE: </ion-label>
     <br>
     <h6>
-      <ion-label class="parrafo">XXXXXX@PROFESOR.DUOCUC.CL</ion-label>
+      <ion-label class="parrafo">{{getNombre()}}</ion-label>
     </h6>
 
 
@@ -36,5 +36,7 @@
 
 
   <ion-button class="generarqr" color="warning" expand="block" routerLink="/codigoqr">¡Generar QR!</ion-button>
+
+  <ion-button class="cerrarsesion" color="secondary" expand="block" (click)="cerrarSesion()" expand="block">CERRAR SESION :)</ion-button>
 
 </ion-content>

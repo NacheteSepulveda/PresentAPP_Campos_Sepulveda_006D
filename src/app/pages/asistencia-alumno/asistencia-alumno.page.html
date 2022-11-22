@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="light">Present!APP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-label class="registroasis">Registro de asistencia de alumno completada!</ion-label>
+
+  <ion-card>
+    <img class="asisimg" src="assets/emoji.jpg" alt="">
+  </ion-card>
+
+  <ion-button class="volver" color="warning" expand="block" routerLink="/inicio-alumno">Volver</ion-button>
+
+</ion-content>

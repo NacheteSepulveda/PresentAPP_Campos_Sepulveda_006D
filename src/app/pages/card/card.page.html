@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+    
+    
+    <ion-buttons slot="end">
+      <ion-back-button 
+        defaultHref="/"
+        text="Volver"
+        color="primary"
+        mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">Present!APP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>¿Que es Present!APP?</ion-card-title>
+    </ion-card-header>
+
+    
+    <icon-card>
+      <img  src="assets/logo.png" class="ion-padding">
+    </icon-card>
+  
+    <ion-card-content>
+      <p class="parrafo">
+        Present!APP es una aplicación que ayuda tanto a docentes como a alumnos a registrar su asistencia en sus respectivas clases.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Codigo QR</ion-card-title>
+    </ion-card-header>
+
+    
+    <icon-card>
+      <img src="assets/codigoqr.png" class="ion-padding">
+    </icon-card>
+  
+    <ion-card-content>
+      <p class="parrafo">
+        Mediante un CODIGO QR tanto docentes como alumnos podran gestionar su asistencia dentro de sus clases.
+        El docente debe proyectar este codigo hacia los alumnos dentro del salon de clases, y los alumnos escanean este codigo.
+        Una vez que los alumnos hayan escaneado dicho codigo se confirma su asistencia exitosamente. Sencillo, no?
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>En tiempos dificiles...</ion-card-title>
+    </ion-card-header>
+
+    
+    <icon-card>
+      <img src="assets/clasesconmascarilla.jpg" class="ion-padding">
+    </icon-card>
+  
+    <ion-card-content>
+      <p class="parrafo">
+        Luego de tanto tiempo en que los docentes realizaran clases remotas a sus alumnos, gracias distintos actores,
+        entidades comunales, autoridades sanitarias, etc, por fín se volvió a la presencialidad. Pero este es un proceso dificil, 
+        ya que, implican muchos factores para poder conllevar este proceso, como por ejemplo, falta de tiempo para el registro,
+        complicado reconocimiento facial en los alumnos, entre otros. Gracias a esta problemática, Present!APP nació.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+
+
+</ion-content>

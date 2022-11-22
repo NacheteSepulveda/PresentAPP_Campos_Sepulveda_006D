@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title color="light">Present!APP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <div class="bienvenida">
+    <ion-label class="parrafo">HOLA!, DOCENTE: </ion-label>
+    <br>
+    <h6>
+      <ion-label class="parrafo">{{getNombre()}}</ion-label>
+    </h6>
+
+
+  </div>
+
+  <div >
+    <ion-label class="asist">HISTORIAL DE ASISTENCIAS</ion-label>
+
+  </div>
+
+  <ion-card>
+    <img class="asisimg" src="assets/asistencia.png" alt="">
+  </ion-card>
+
+  <ion-card>
+    <img class="logo" src="assets/logo.png" alt="">
+  </ion-card>
+
+
+  <ion-button class="generarqr" color="warning" expand="block" routerLink="/codigoqr">¡Generar QR!</ion-button>
+
+  <ion-button class="cerrarsesion" color="secondary" expand="block" (click)="cerrarSesion()" expand="block">CERRAR SESION :)</ion-button>
+
+</ion-content>

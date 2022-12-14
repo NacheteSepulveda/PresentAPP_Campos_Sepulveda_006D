@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { IngresadoAlumnoGuard } from './ingresado-alumno.guard';
-import { IngresadoDocenteGuard } from './ingresado-docente.guard';
-import { NoIngresadoAlumnoGuard } from './no-ingresado-alumno.guard';
-import { NoIngresadoDocenteGuard } from './no-ingresado-docente.guard';
+import { IngresadoAlumnoGuard } from './guards/ingresado-alumno.guard'; 
+import { IngresadoDocenteGuard }from './guards/ingresado-docente.guard'
+import { NoIngresadoAlumnoGuard } from './guards/no-ingresado-alumno.guard'
+import { NoIngresadoDocenteGuard } from './guards/no-ingresado-docente.guard'
 
 const routes: Routes = [
   {
@@ -58,11 +58,6 @@ const routes: Routes = [
     canActivate: [IngresadoAlumnoGuard]
   },
   {
-    path: 'asistencia-alumno',
-    loadChildren: () => import('./pages/asistencia-alumno/asistencia-alumno.module').then( m => m.AsistenciaAlumnoPageModule),
-    canActivate: [IngresadoAlumnoGuard]
-  },
-  {
     path: 'registro',
     loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule),
     canActivate: [NoIngresadoAlumnoGuard, NoIngresadoDocenteGuard]
@@ -72,6 +67,17 @@ const routes: Routes = [
     loadChildren: () => import('./pages/feriados/feriados.module').then( m => m.FeriadosPageModule),
     canActivate: [IngresadoAlumnoGuard, IngresadoDocenteGuard]
   },
+
+  {
+    path: 'listar-alumnos',
+    loadChildren: () => import('./pages/listar-alumnos/listar-alumnos.module').then( m => m.ListarAlumnosPageModule),
+    canActivate: [IngresadoDocenteGuard]
+  },
+  {
+    path: 'agregar-alumno',
+    loadChildren: () => import('./pages/agregar-alumno/agregar-alumno.module').then( m => m.AgregarAlumnoPageModule),
+    canActivate: [IngresadoDocenteGuard]
+  }
 
 ];
 

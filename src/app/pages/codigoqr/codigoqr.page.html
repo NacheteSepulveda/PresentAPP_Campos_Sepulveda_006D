@@ -22,10 +22,39 @@
   <ion-card class="ion-text-center">
     <ion-card-content>
 
-      <ion-item>
-        <ion-label position="fixed">Asignatura: </ion-label>
-        <ion-input type="text" [(ngModel)]="usuario.nom" required></ion-input>
-      </ion-item>
+      <ion-list >
+        <ion-item >
+          <ion-select [(ngModel)]="usuario.nom" placeholder="Seleccione la Asignatura">
+            <ion-select-option value="ARQUITECTURA">ARQUITECTURA</ion-select-option>
+            <ion-select-option value="CALIDAD DE SOFTWARE">CALIDAD DE SOFTWARE</ion-select-option>
+            <ion-select-option value="PROGRAMACION DE APLICACIONES MOVILES">PROGRAMACION DE APLICACIONES MOVILES</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <ion-list >
+        <ion-item >
+          <ion-select [(ngModel)]="usuario.fecha" placeholder="Seleccione el dia">
+            <ion-select-option value="LUNES">LUNES</ion-select-option>
+            <ion-select-option value="MARTES">MARTES</ion-select-option>
+            <ion-select-option value="MIERCOLES">MIERCOLES</ion-select-option>
+            <ion-select-option value="JUEVES">JUEVES</ion-select-option>
+            <ion-select-option value="VIERNES">VIERNES</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <ion-list >
+        <ion-item >
+          <ion-select [(ngModel)]="usuario.asig" placeholder="Seleccione la seccion">
+            <ion-select-option value="001">001</ion-select-option>
+            <ion-select-option value="002">002</ion-select-option>
+            <ion-select-option value="003">003</ion-select-option>
+            <ion-select-option value="004">004</ion-select-option>
+            <ion-select-option value="005">005</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
 
       <ion-button 
           expand="block" 
@@ -45,8 +74,14 @@
     </ion-card-content>
  </ion-card>
 
+ <ion-button 
+        expand="block" 
+        class="ion-margin" 
+        routerLink="/listar-alumnos">
+        Ver Alumnos
+  </ion-button>
 
-  <ion-button class="finalizarasis" color="warning" expand="block" routerLink="/docenteasis">Finalizar</ion-button>
+
 </ion-content>
 
 

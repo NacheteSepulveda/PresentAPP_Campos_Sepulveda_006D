@@ -16,6 +16,8 @@ export class CodigoqrPage implements OnInit {
 
   usuario={
     nom:'',
+    fecha: '',
+    asig: ''
   }
 
   ngOnInit() {
@@ -28,6 +30,8 @@ export class CodigoqrPage implements OnInit {
 
   generaScan(){
     this.qrCodeString= this.usuario.nom;
+    this.qrCodeString= this.usuario.fecha;
+    this.qrCodeString= this.usuario.asig;
   }
 
   verScan(){

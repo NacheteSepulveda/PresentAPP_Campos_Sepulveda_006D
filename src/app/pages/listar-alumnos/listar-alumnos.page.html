@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Lista Alumnos</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/agregar-alumno']" color="secondary">
+         Agregar
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-label class="mensaje">REGISTRO DE ALUMNOS COMPLETADO!</ion-label>
+  <ion-list>
+    <ion-item class="asistencia" *ngFor="let a of alumnos">
+      <ion-label>{{a.nombre}}</ion-label>
+      <ion-label>{{a.correo}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-button class="escanearqr" color="warning" expand="block" routerLink="/inicio">Finalizar</ion-button>
+
+  <ion-card>
+    <img class="asisimg" src="assets/emoji.jpg" alt="">
+  </ion-card>
+  
+
+</ion-content>
+

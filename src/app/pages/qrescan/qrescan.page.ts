@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 import { BarcodeScanner } from '@awesome-cordova-plugins/barcode-scanner/ngx';
 
+
 @Component({
   selector: 'app-qrescan',
   templateUrl: './qrescan.page.html',

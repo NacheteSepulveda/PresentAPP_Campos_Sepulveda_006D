@@ -23,9 +23,10 @@ export class AppComponent {
     },
     {
       icon : 'eye-outline',
-      name: 'Correos de compañeros',
+      name: 'Correos de auspiciadores',
       redirecTo: '/feriados'
     }
+    
   ];
 
 }

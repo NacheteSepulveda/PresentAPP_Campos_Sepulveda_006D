@@ -1,0 +1,29 @@
+{
+  "Alumnos": [
+    {
+      "id": 1,
+      "nombre": "Martin Gonzalez",
+      "correo": "Martin.gon@duocuc.cl"
+    },
+    {
+      "nombre": "Ignacio Sepulveda",
+      "correo": "igna.sepulveda@duocuc.cl",
+      "id": 2
+    },
+    {
+      "nombre": "Sebastian Palma",
+      "correo": "se.palmae@duocuc.cl",
+      "id": 3
+    },
+    {
+      "nombre": "Dilan Campos",
+      "correo": "dil.campos@duocuc.cl",
+      "id": 4
+    },
+    {
+      "nombre": "Danae Huenchul",
+      "correo": "da.huenchul@duocuc.cl",
+      "id": 5
+    }
+  ]
+}
